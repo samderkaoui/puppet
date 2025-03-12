@@ -1,4 +1,5 @@
 # Guide complet de Puppet
+![alt text](<Screenshot 2025-03-12 at 14.46.40.png>)
 
 ## Introduction
 

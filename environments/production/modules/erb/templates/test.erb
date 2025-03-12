@@ -1,0 +1,18 @@
+<%# Template pour générer un fichier en fonction du système d'exploitation %>
+Ce fichier a été généré par Puppet le <%= @template_vars['current_time'] %>
+
+Information sur le système:
+------------------------
+Hostname: <%= @template_vars['hostname'] %>
+Adresse IP: <%= @template_vars['ipaddress'] %>
+Famille OS: <%= @template_vars['os_family'] %>
+
+<% if @template_vars['os_family'] == 'Debian' -%>
+Ce système est basé sur Debian.
+Le fichier a été créé dans /opt/data666/coucou.deb
+<% else -%>
+Ce système n'est PAS basé sur Debian.
+Le fichier a été créé dans /home/sderkaoui/jesuispasdebian.deb
+<% end -%>
+
+Fichier généré automatiquement, merci de ne pas modifier manuellement.

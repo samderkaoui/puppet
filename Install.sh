@@ -145,3 +145,8 @@ sudo /opt/puppetlabs/bin/puppet agent -t
 
 - sur serveur puppet :
 sudo /opt/puppetlabs/bin/puppetserver ca clean --certname agent.localdomain.lan
+
+
+
+# Commande pour lancer puppet agent
+sudo /opt/puppetlabs/bin/puppet agent -t

@@ -7,7 +7,7 @@ node 'agent01' {
   include erb
 }
 
-# Deuxième node qui ne fait que créer le dossier
-#node 'node2.example.com' {
-#  include common
-#}
+# Deuxième node qui n'est pas définis pour tester defaults
+node 'node2.example.com' {
+  include common
+}

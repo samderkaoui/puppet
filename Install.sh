@@ -142,10 +142,10 @@ sudo systemctl restart puppet
 cat /etc/puppetlabs/puppet/puppet.conf
 
 
-- sur server puppet : sudo /opt/puppetlabs/bin/puppetserver ca sign --certname agent01
-sudo /opt/puppetlabs/bin/puppet agent -t
-
-- sur serveur puppet :
+- sur server puppet :
+# sign new cert
+sudo /opt/puppetlabs/bin/puppetserver ca sign --certname agent01
+# revoke cert
 sudo /opt/puppetlabs/bin/puppetserver ca clean --certname agent.localdomain.lan
 
 
